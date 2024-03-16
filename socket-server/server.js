@@ -1,7 +1,7 @@
 const io = require('socket.io')(3001, {
   cors: {
     origin: [
-      'https://instagram-clone-chandra-prakashs-projects-e92703e1.vercel.app',
+      'https://instagram-clone-w91x-chandra-prakashs-projects-e92703e1.vercel.app',
       'http://localhost:3000',
     ],
     methods: ['GET', 'POST'],
