@@ -41,7 +41,7 @@ const PostFooter = ({
   };
 
   useEffect(() => {
-    const getSocket = io('https://instagram-clone-socket-server.onrender.com');
+    const getSocket = io('https://instagram-clone-sttz.onrender.com');
 
     getSocket.on('like', (like, resId) => {
       if (resId === id) {

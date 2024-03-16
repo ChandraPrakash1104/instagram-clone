@@ -26,11 +26,12 @@ const AddComment = ({
         className='border-none outline-none bg-transparent placeholder-gray-400 '
         value={typedComment}
         onChange={(e) => {
-          setIsValid(false);
+          setIsValid(true);
           setTypedComment(e.target.value);
           if (!isSignedIn()) {
             setAlert(true);
             setIsValid(false);
+            console.log('not logged in');
 
             setTimeout(() => {
               setAlert(false);
